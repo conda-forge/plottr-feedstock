@@ -10,7 +10,7 @@ source:
   sha256: 7800f0ba704bfbfa0564538c790a3551142bb5e23cbe7282e69d4f9ffe0d9536
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py27]
   skip: true  # [py36]
   script: "{{ PYTHON }} -m pip install . -vv"
@@ -32,7 +32,7 @@ requirements:
   run:
     - h5py >=2.8.0
     - lmfit >=1.0
-    - matplotlib >=3.0.0
+    - matplotlib-base >=3.0.0
     - numpy >=1.12.0
     - python
     - pyqtgraph >=0.10.0
