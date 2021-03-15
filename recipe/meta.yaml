@@ -10,10 +10,14 @@ source:
   sha256: 7800f0ba704bfbfa0564538c790a3551142bb5e23cbe7282e69d4f9ffe0d9536
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py27]
   skip: true  # [py36]
   script: "{{ PYTHON }} -m pip install . -vv"
+  entry_points:
+    - plottr-monitr = plottr.apps.monitr:script
+    - plottr-inspectr = plottr.apps.inspectr:script
+    - plottr-autoplot-ddh5 = plottr.apps.autoplot:script
 
 requirements:
   build:
