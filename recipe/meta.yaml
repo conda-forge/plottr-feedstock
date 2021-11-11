@@ -11,8 +11,8 @@ source:
 
 build:
   number: 0
-  skip: true  # [py27]
-  skip: true  # [py36]
+  skip: true  # [py=27]
+  skip: true  # [py<=36]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - plottr-monitr = plottr.apps.monitr:script
