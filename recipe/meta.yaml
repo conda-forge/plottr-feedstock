@@ -1,5 +1,5 @@
 {% set name = "plottr" %}
-{% set version = "0.9.2" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f34500cc4894ba0007beba36eee89ff63ca8988799fe963cd5b58c36dd59e68
+  sha256: 209e7ba25bf5bf212b14aaceb2c24d4856723d707f5a0bed21d2288bc5ae96be
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - xorg-libxfixes  # [linux]
     - python
     - pip
+    - versioningit
   run:
     - python
     - pandas >=0.22
@@ -46,6 +47,7 @@ requirements:
     - typing_extensions >=3.7.4.3
     - packaging >=20.0
     - xhistogram >=0.3.0
+    - versioningit >=1.1.0
   run_constrained:
     - pyside2 >=5.12
     - pyqt
