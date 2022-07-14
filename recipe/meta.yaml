@@ -33,6 +33,7 @@ requirements:
     - xorg-libxfixes  # [linux]
     - python
     - pip
+    - versioningit
   run:
     - python
     - pandas >=0.22
@@ -46,6 +47,7 @@ requirements:
     - typing_extensions >=3.7.4.3
     - packaging >=20.0
     - xhistogram >=0.3.0
+    - versioningit >=1.1.0
   run_constrained:
     - pyside2 >=5.12
     - pyqt
