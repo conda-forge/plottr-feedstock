@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0e5358aff37c2e8de1ed70dcada99f000f85853804e0ea4c6f079b0de8fe9061
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py==27]
   skip: true  # [py<=37]
   script: {{ PYTHON }} -m pip install . -vv
@@ -34,6 +34,7 @@ requirements:
     - xorg-libxfixes  # [linux]
     - python
     - pip
+    - setuptools
     - versioningit
   run:
     - python
