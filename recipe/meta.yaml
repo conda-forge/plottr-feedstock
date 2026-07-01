@@ -1,5 +1,5 @@
 {% set name = "plottr" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fa68389e82e096f5790e846e758262bc211ca7ffb0506034608a9a25e0b499ea
+  sha256: 3d45b357bf726d50103f0ae8d80e7437a8b1b0ae4ac633ec80428ec4e76b60a3
 
 build:
   number: 0
