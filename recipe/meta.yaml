@@ -1,5 +1,5 @@
 {% set name = "plottr" %}
-{% set version = "0.18.1" %}
+{% set version = "0.18.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eac18f72305333c6ac841980b09476ec74e8e87b67efe1b9ea58f993eed3f63d
+  sha256: b54201147390366d454ded71b668835a8c0995fb03a90e673f58077bc3bc1af5
 
 build:
   number: 0
